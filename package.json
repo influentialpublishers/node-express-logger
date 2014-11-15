@@ -4,7 +4,7 @@
   "description": "A configured logger instance to use with all IP servers.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha test"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,11 @@
   "dependencies": {
     "coffee-script": "^1.8.0",
     "debug": "^2.1.0"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.0.1",
+    "sinon": "^1.11.1",
+    "sinon-chai": "^2.6.0"
   }
 }

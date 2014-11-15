@@ -17,12 +17,12 @@ levels  =
 module.exports  = (name) ->
     name        = name || process.env.APP_NAME
     logger      = debug("#{name}:info")
-    log.log     = console.log.bind(console)
+    logger.log  = console.log.bind(console)
     
-    for level of levels
-        sub_logger      = debug("#{name}:#{level.tag}")
-        sub_logger.log  = console[level.console].bind(console)
+    for level, settings of levels
+        sub_logger      = debug("#{name}:#{settings.tag}")
+        sub_logger.log  = console[settings.console].bind(console)
         
-        log[level.tag]  = sub_logger
+        logger[settings.tag]  = sub_logger
         
     return logger

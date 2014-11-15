@@ -1,0 +1,5 @@
+--ui bdd
+--compilers coffee:coffee-script/register
+--growl
+--recursive
+--require test/common
