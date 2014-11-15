@@ -1,6 +1,6 @@
 {
   "name": "node-express-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A configured logger instance to use with all IP servers.",
   "main": "index.js",
   "scripts": {
