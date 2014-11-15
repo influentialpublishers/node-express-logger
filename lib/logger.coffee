@@ -1,6 +1,9 @@
 debug   = require('debug')
 
 levels  =
+    info:
+        tag: 'info'
+        console: 'log'
     notice: 
         tag: 'notice'
         console: 'info'

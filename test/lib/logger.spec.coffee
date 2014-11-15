@@ -10,6 +10,10 @@ describe "Logger", ->
         
         it "should be a function", ->
             my_logger.log.should.be.a 'function'
+            
+    describe "::info()", ->
+        it "should be a function", ->
+            my_logger.info.should.be.a 'function'
 
     describe "::notice()", ->
         it "should be a function", ->
